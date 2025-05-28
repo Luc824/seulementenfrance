@@ -12,4 +12,4 @@ Inspired by [OnlyInPortugal.com](https://onlyinportugal.com) by levelsio.
 
 ## 📬 Submit Your Post
 
-Want to share something furstrating about France? Just post it directly on the page!
+Want to share something frustrating about France? Just post it directly on the page!
