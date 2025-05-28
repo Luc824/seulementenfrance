@@ -6,23 +6,60 @@
     <title>Seulement en France 🇫🇷</title>
     <style>
       body {
-        font-family: sans-serif;
-        background-color: #f4f4f4;
         margin: 0;
-        padding: 2rem;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        background-color: #fafafa;
+        color: #222;
+        line-height: 1.6;
       }
+
       .container {
-        max-width: 800px;
-        margin: auto;
-        background: white;
-        padding: 2rem;
-        border-radius: 10px;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background: #fff;
+        border: 1px solid #eee;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        margin-top: 60px;
+        margin-bottom: 60px;
       }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-bottom: 1.2rem;
+      }
+
+      strong {
+        display: block;
+        margin-top: 1.5rem;
+        font-weight: 600;
+      }
+
       iframe {
         width: 100%;
-        min-height: 600px;
+        min-height: 700px;
         border: none;
         margin-top: 2rem;
+        border-radius: 6px;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 20px 15px;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
       }
     </style>
   </head>
@@ -42,17 +79,18 @@
         existe un véritable schéma récurrent dans les interactions de service en
         France.
       </p>
-      <p>
-        <strong>
-          📌 Les posts sont 100 % anonymes. Votre email et identité ne sont
-          jamais partagés.
-        </strong>
-      </p>
+      <strong
+        >📌 Les posts sont 100 % anonymes. Votre email et identité ne sont
+        jamais partagés.</strong
+      >
+      <strong
+        >🗳️ Mise à jour : Nous prévoyons d’envoyer les histoires les plus
+        marquantes aux députés français pour faire entendre vos voix.</strong
+      >
 
       <!-- Featurebase Embed -->
       <iframe
         src="https://seulementenfrance.featurebase.app/board"
-        style="width: 100%; height: 800px; border: none"
         title="Seulement en France feedback board"
       >
       </iframe>
