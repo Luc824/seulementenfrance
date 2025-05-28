@@ -18,8 +18,7 @@
         padding: 2rem;
         border-radius: 10px;
       }
-      iframe,
-      [data-featurebase-embed] {
+      iframe {
         width: 100%;
         min-height: 600px;
         border: none;
@@ -44,57 +43,19 @@
         France.
       </p>
       <p>
-        <strong
-          >📌 Les posts sont 100 % anonymes. Votre email et identité ne sont
-          jamais partagés.</strong
-        >
+        <strong>
+          📌 Les posts sont 100 % anonymes. Votre email et identité ne sont
+          jamais partagés.
+        </strong>
       </p>
 
       <!-- Featurebase Embed -->
-      <div data-featurebase-embed></div>
+      <iframe
+        src="https://seulementenfrance.featurebase.app/board"
+        style="width: 100%; height: 800px; border: none"
+        title="Seulement en France feedback board"
+      >
+      </iframe>
     </div>
-
-    <!-- Featurebase SDK -->
-    <script>
-      !(function (e, t) {
-        const a = "featurebase-sdk";
-        function n() {
-          if (!t.getElementById(a)) {
-            var e = t.createElement("script");
-            (e.id = a),
-              (e.src = "https://do.featurebase.app/js/sdk.js"),
-              t
-                .getElementsByTagName("script")[0]
-                .parentNode.insertBefore(
-                  e,
-                  t.getElementsByTagName("script")[0]
-                );
-          }
-        }
-        "function" != typeof e.Featurebase &&
-          (e.Featurebase = function () {
-            (e.Featurebase.q = e.Featurebase.q || []).push(arguments);
-          }),
-          "complete" === t.readyState || "interactive" === t.readyState
-            ? n()
-            : t.addEventListener("DOMContentLoaded", n);
-      })(window, document);
-    </script>
-
-    <!-- Featurebase Initialization -->
-    <script>
-      Featurebase("init_embed_widget", {
-        organization: "seulementenfrance", // replace if your org slug is different
-        embedOptions: {
-          path: "/",
-          filters: "",
-        },
-        stylingOptions: {
-          theme: "light",
-          hideMenu: false,
-          hideLogo: false,
-        },
-      });
-    </script>
   </body>
 </html>
