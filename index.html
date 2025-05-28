@@ -1,83 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Only in France</title>
-    <meta
-      name="description"
-      content="Weird, charming, and funny things you can only see in France 🇫🇷"
-    />
-    <meta property="og:title" content="Only in France" />
-    <meta
-      property="og:description"
-      content="Weird, charming, and funny things you can only see in France 🇫🇷"
-    />
-    <meta property="og:image" content="https://onlyinfrance.com/og-image.jpg" />
-    <meta property="og:url" content="https://onlyinfrance.com" />
-    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seulement en France 🇫🇷</title>
     <style>
       body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-family: sans-serif;
+        background-color: #f4f4f4;
         margin: 0;
-        padding: 0;
-        background: #fafafa;
-        color: #222;
-      }
-
-      header {
-        text-align: center;
         padding: 2rem;
       }
-
-      header h1 {
-        font-size: 2.5rem;
-        margin: 0.5rem 0;
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
       }
-
-      header p {
-        font-size: 1.1rem;
-        color: #666;
-      }
-
-      iframe {
+      iframe,
+      [data-featurebase-embed] {
         width: 100%;
-        height: 85vh;
+        min-height: 600px;
         border: none;
-        display: block;
-      }
-
-      footer {
-        text-align: center;
-        padding: 1rem;
-        font-size: 0.9rem;
-        color: #999;
-      }
-
-      @media (max-width: 600px) {
-        header h1 {
-          font-size: 1.8rem;
-        }
+        margin-top: 2rem;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>🇫🇷 Only in France</h1>
-      <p>Weird, charming, and funny things you can only see in France</p>
-    </header>
+    <div class="container">
+      <h1>🇫🇷 Partagez votre histoire en France</h1>
+      <p>Nous adorons la France ❤️</p>
+      <p>
+        Mais il faut bien l’avouer : il nous arrive aussi de vivre des
+        situations complètement folles, frustrantes ou absurdes qu’on ne voit
+        nulle part ailleurs dans le monde. Des expériences qui donnent envie de
+        s’arracher les cheveux — ou d’en rire — tant certains services peuvent
+        sembler kafkaïens.
+      </p>
+      <p>
+        Ce tableau a pour but de recueillir vos témoignages et de montrer qu’il
+        existe un véritable schéma récurrent dans les interactions de service en
+        France.
+      </p>
+      <p>
+        <strong
+          >📌 Les posts sont 100 % anonymes. Votre email et identité ne sont
+          jamais partagés.</strong
+        >
+      </p>
+      <p>
+        <strong>🗳️ Mise à jour :</strong> Nous prévoyons d’envoyer les histoires
+        les plus marquantes aux députés français pour faire entendre vos voix.
+      </p>
 
-    <iframe
-      src="https://YOUR-FEATUREBASE-EMBED-URL"
-      title="Only in France Submissions"
-    ></iframe>
+      <!-- Featurebase Embed -->
+      <div data-featurebase-embed></div>
+    </div>
 
-    <footer>
-      Built with ❤️ using
-      <a href="https://featurebase.app" target="_blank" rel="noopener"
-        >Featurebase</a
-      >
-    </footer>
+    <!-- Featurebase SDK -->
+    <script>
+      !(function (e, t) {
+        const a = "featurebase-sdk";
+        function n() {
+          if (!t.getElementById(a)) {
+            var e = t.createElement("script");
+            (e.id = a),
+              (e.src = "https://do.featurebase.app/js/sdk.js"),
+              t
+                .getElementsByTagName("script")[0]
+                .parentNode.insertBefore(
+                  e,
+                  t.getElementsByTagName("script")[0]
+                );
+          }
+        }
+        "function" != typeof e.Featurebase &&
+          (e.Featurebase = function () {
+            (e.Featurebase.q = e.Featurebase.q || []).push(arguments);
+          }),
+          "complete" === t.readyState || "interactive" === t.readyState
+            ? n()
+            : t.addEventListener("DOMContentLoaded", n);
+      })(window, document);
+    </script>
+
+    <!-- Featurebase Initialization -->
+    <script>
+      Featurebase("init_embed_widget", {
+        organization: "seulementenfrance", // replace if your org slug is different
+        embedOptions: {
+          path: "/",
+          filters: "",
+        },
+        stylingOptions: {
+          theme: "light",
+          hideMenu: false,
+          hideLogo: false,
+        },
+      });
+    </script>
   </body>
 </html>
