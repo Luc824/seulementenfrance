@@ -4,8 +4,6 @@ Inspired by [OnlyInPortugal.com](https://onlyinportugal.com) by levelsio.
 
 - Visitors submit posts to a Featurebase board
 - Others can upvote and comment
-- Everything is embedded directly in a static HTML page
-- No backend, no server, no database management
 
 ## 🙌 Credits
 
@@ -14,4 +12,4 @@ Inspired by [OnlyInPortugal.com](https://onlyinportugal.com) by levelsio.
 
 ## 📬 Submit Your Post
 
-Want to share something unique about France? Just post it directly on the page!
+Want to share something furstrating about France? Just post it directly on the page!
